@@ -53,7 +53,7 @@ public class Login implements ActionListener {
                     String foundPassword = new String(pw.getText());
 
                     //loop Throw files:
-                    File User_infoFolder=new File("User_Info");
+                    File User_infoFolder=new File("userInfo");
                     UserInfoFiles=User_infoFolder.list();
                     UserInfoFileName=new String();
 
@@ -70,6 +70,7 @@ public class Login implements ActionListener {
                         Scanner sc =new Scanner(fr);
 
                         while(sc.hasNextLine()){
+                            
                             //nbgadmp
                             name=sc.nextLine();
                             sc.nextLine();sc.nextLine();sc.nextLine();sc.nextLine();
@@ -161,7 +162,7 @@ public class Login implements ActionListener {
         j.setSize(1920,1080);
         j.setLayout(null);
         j.setIconImage(logo.getImage());
-        j.getContentPane().setBackground(Color.BLACK);
+        j.getContentPane().setBackground(Color.WHITE);
         
         
 
