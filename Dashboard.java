@@ -3,7 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import static javax.swing.JOptionPane.showMessageDialog;
 
-public class Dashboard1  implements  ActionListener {
+public class Dashboard  implements  ActionListener {
 
     private JFrame f;
     private JButton b1,b2;
@@ -16,7 +16,7 @@ public class Dashboard1  implements  ActionListener {
     private ImageIcon logo = new ImageIcon("pictureSrc\\bloodDrop.jpg");
 
 
-    Dashboard1() {
+    Dashboard() {
         showMessageDialog(null, "Welcome ");
         f = new JFrame();
 
