@@ -31,7 +31,6 @@ public class SearchResult extends JFrame {
             for ( int j=0; j<UserInfoFiles.length; j++){
                 if (givenArea.equals(area) && givenBloodGroup.equals(bloodGroup)&& sameBloodUser[j]==null){
                     sameBloodUser[j]=UserInfoFiles[i];
-
                     break;
                 }
             }
@@ -71,7 +70,7 @@ public class SearchResult extends JFrame {
 
     //Frame Setting:
         setVisible(true);
-        setTitle("INFORMATION OF THE  BLOOD DONER");
+        setTitle("INFORMATION OF THE  BLOOD DONOR");
         setSize(500, 600);
         setIconImage(logo.getImage());
         setLocationRelativeTo(null);
