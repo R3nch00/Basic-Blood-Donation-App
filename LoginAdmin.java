@@ -18,6 +18,7 @@ public class LoginAdmin {
     LoginAdmin(){
 
         j=new JFrame();
+        // ImageIcon image = new ImageIcon("Login.jpg");
         showMessageDialog(null, "If you are not an admin then go to User Login page");
 
 //User id:
@@ -78,6 +79,7 @@ public class LoginAdmin {
 
             }
         });
+        
 //Frame setting:
         j.setVisible(true);
         j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
