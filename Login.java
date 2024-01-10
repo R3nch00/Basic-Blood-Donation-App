@@ -24,6 +24,7 @@ public class Login implements ActionListener {
     Login(){
 
         j=new JFrame();
+        // ImageIcon image = new ImageIcon("Login.jpg");
         showMessageDialog(null, "Welcome to Blood Donation");
         showMessageDialog(null, "Here User Name is your Mobile Number");
 
@@ -66,7 +67,7 @@ public class Login implements ActionListener {
 
                     //Reading:
                     try{
-                        FileReader fr=new FileReader("User_Info\\"+UserInfoFileName);
+                        FileReader fr=new FileReader("userInfo\\"+UserInfoFileName);
                         Scanner sc =new Scanner(fr);
 
                         while(sc.hasNextLine()){
@@ -93,7 +94,7 @@ public class Login implements ActionListener {
                     }
 
                     if (flag == 1) {
-                        new Dashboard1();
+                        new Dashboard();
                         j.setVisible(false);
                     } else {
                         showMessageDialog(null, "Invalid Username and password!");
